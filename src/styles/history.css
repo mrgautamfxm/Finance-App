@@ -1,0 +1,125 @@
+.history-page {
+  padding-bottom: 20px;
+}
+
+.search-bar {
+  padding: 0 20px;
+  margin-bottom: 16px;
+}
+
+.search-bar .search-input {
+  width: 100%;
+  padding: 14px 16px 14px 44px;
+  border: 2px solid var(--border);
+  border-radius: var(--radius-sm);
+  font-family: inherit;
+  font-size: 15px;
+  background: var(--card);
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.search-bar .search-input:focus {
+  border-color: var(--primary);
+}
+
+.search-wrapper {
+  position: relative;
+}
+
+.search-wrapper .search-icon {
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-lighter);
+}
+
+/* Filters */
+.filter-bar {
+  padding: 0 20px;
+  margin-bottom: 16px;
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+
+.filter-bar::-webkit-scrollbar {
+  display: none;
+}
+
+.filter-chip {
+  padding: 8px 16px;
+  border-radius: 20px;
+  border: 1.5px solid var(--border);
+  background: var(--card);
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-light);
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.2s;
+}
+
+.filter-chip.active {
+  background: var(--primary);
+  color: white;
+  border-color: var(--primary);
+}
+
+/* Category Summary */
+.category-summary {
+  margin: 0 20px 16px;
+  background: linear-gradient(135deg, #6C5CE7, #A29BFE);
+  border-radius: var(--radius);
+  padding: 20px;
+  color: white;
+}
+
+.category-summary .cs-title {
+  font-size: 14px;
+  opacity: 0.85;
+  font-weight: 500;
+}
+
+.category-summary .cs-stats {
+  display: flex;
+  gap: 24px;
+  margin-top: 12px;
+}
+
+.category-summary .cs-stat .cs-value {
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.category-summary .cs-stat .cs-label {
+  font-size: 11px;
+  opacity: 0.7;
+  margin-top: 2px;
+}
+
+/* Date Group */
+.date-group {
+  margin-bottom: 16px;
+}
+
+.date-group .date-label {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-lighter);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 0 20px;
+  margin-bottom: 8px;
+}
+
+.date-group .transactions {
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}

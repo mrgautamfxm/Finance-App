@@ -1,0 +1,182 @@
+.budget-page {
+  padding-bottom: 20px;
+}
+
+.add-money-card {
+  margin: 0 20px 20px;
+  background: linear-gradient(135deg, #00B894, #55EFC4);
+  border-radius: 20px;
+  padding: 24px;
+  color: white;
+  box-shadow: 0 8px 24px rgba(0, 184, 148, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+.add-money-card::after {
+  content: '';
+  position: absolute;
+  bottom: -40%;
+  right: -20%;
+  width: 160px;
+  height: 160px;
+  background: rgba(255,255,255,0.1);
+  border-radius: 50%;
+}
+
+.add-money-card h3 {
+  font-size: 14px;
+  opacity: 0.9;
+  font-weight: 500;
+}
+
+.add-money-card .total-credit {
+  font-size: 32px;
+  font-weight: 800;
+  margin-top: 4px;
+}
+
+.add-money-btn {
+  margin-top: 16px;
+  background: rgba(255,255,255,0.25);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  backdrop-filter: blur(10px);
+  transition: background 0.2s;
+}
+
+.add-money-btn:hover {
+  background: rgba(255,255,255,0.35);
+}
+
+/* Budget Overview */
+.budget-overview {
+  padding: 0 20px;
+}
+
+.budget-overview h2 {
+  font-size: 17px;
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+
+.budget-item {
+  background: var(--card);
+  border-radius: var(--radius-sm);
+  padding: 16px;
+  margin-bottom: 10px;
+  box-shadow: var(--shadow);
+}
+
+.budget-item-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.budget-item-header .bi-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.budget-item-header .bi-icon {
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+
+.budget-item-header .bi-name {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.budget-item-header .bi-percent {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.budget-bar {
+  height: 8px;
+  background: var(--border);
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 8px;
+}
+
+.budget-bar-fill {
+  height: 100%;
+  border-radius: 4px;
+  transition: width 0.5s ease;
+}
+
+.budget-item-footer {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: var(--text-lighter);
+}
+
+.budget-item-footer .spent {
+  font-weight: 600;
+  color: var(--text);
+}
+
+/* Monthly Budget Setting */
+.monthly-budget-setting {
+  margin: 0 20px 20px;
+  background: var(--card);
+  border-radius: var(--radius);
+  padding: 20px;
+  box-shadow: var(--shadow);
+}
+
+.monthly-budget-setting h3 {
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.monthly-budget-setting .mb-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.monthly-budget-setting .mb-row input {
+  flex: 1;
+  padding: 12px 14px;
+  border: 2px solid var(--border);
+  border-radius: var(--radius-xs);
+  font-family: inherit;
+  font-size: 15px;
+  outline: none;
+}
+
+.monthly-budget-setting .mb-row input:focus {
+  border-color: var(--primary);
+}
+
+/* Credit History */
+.credit-history {
+  padding: 0 20px;
+  margin-top: 20px;
+}
+
+.credit-history h2 {
+  font-size: 17px;
+  font-weight: 700;
+  margin-bottom: 14px;
+}
